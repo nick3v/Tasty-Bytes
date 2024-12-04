@@ -4,6 +4,7 @@ project(Tasty_Bytes)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
-
 add_executable(Tasty_Bytes
-        main.cpp)
+        main.cpp
+        recipe.h
+)
