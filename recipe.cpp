@@ -1,12 +1,78 @@
+#include "recipe.h"
 #include <iostream>
 #include <vector>
 #include <string>
 #include <chrono>
 #include <sstream>
 #include <algorithm>
-#include "recipe.h"
 using namespace std;
 using namespace chrono;
+
+// Constructor implementation
+Recipe::Recipe(int RecipeId, string Name, string TotalTime, string RecipeCategory,
+               string RecipeIngredientQuantities, string RecipeIngredientParts,
+               string AggregatedRating, string Calories, string RecipeServings,
+               string RecipeInstructions) {
+    this->RecipeId = RecipeId;
+    this->Name = Name;
+    this->TotalTime = TotalTime;
+    this->RecipeCategory = RecipeCategory;
+    this->RecipeIngredientQuantities = RecipeIngredientQuantities;
+    this->RecipeIngredientParts = RecipeIngredientParts;
+    this->AggregatedRating = AggregatedRating;
+    this->Calories = Calories;
+    this->RecipeServings = RecipeServings;
+    this->RecipeInstructions = RecipeInstructions;
+}
+
+// Display method implementation
+void Recipe::display() const {
+    cout << "RecipeId: " << RecipeId << "\n";
+    cout << "Name: " << Name << "\n";
+    cout << "TotalTime: " << TotalTime << "\n";
+    cout << "RecipeCategory: " << RecipeCategory << "\n";
+    cout << "RecipeIngredientQuantities: " << RecipeIngredientQuantities << "\n";
+    cout << "RecipeIngredientParts: " << RecipeIngredientParts << "\n";
+    cout << "AggregatedRating: " << AggregatedRating << "\n";
+    cout << "Calories: " << Calories << "\n";
+    cout << "RecipeServings: " << RecipeServings << "\n";
+    cout << "RecipeInstructions: " << RecipeInstructions << "\n";
+}
+
+// Implementation of createRecipeObjects
+pair<vector<string>, vector<Recipe>> createRecipeObjects() {
+    ifstream file("../pipedrecipes.psv");
+    if (!file.is_open()) {
+        cerr << "Error: Unable to open file.\n";
+        return {{}, {}};  // Return empty vectors if file can't be opened
+    }
+
+    vector<Recipe> recipeObjectList;
+    vector<string> recipeNamesId;
+    string line;
+
+    while (getline(file, line)) {
+        stringstream ss(line);
+        vector<string> values;
+        string value;
+
+        while (getline(ss, value, '|')) {
+            values.push_back(value);
+        }
+
+        if (values.size() == 10) {
+            Recipe recipe(recipeObjectList.size(), values[1], values[2], values[3],
+                          values[4], values[5], values[6], values[7],
+                          values[8], values[9]);
+            recipeNamesId.push_back(values[1] + to_string(recipeObjectList.size()));
+            recipeObjectList.push_back(recipe);
+        }
+    }
+
+    cout << "Recipes Successfully Imported." << endl;
+    cout << "Sorting now." << endl;
+    return {recipeNamesId, recipeObjectList};
+}
 
 // Helper function to extract the number at the end of a string
 int extractNumber(const string &s) {
@@ -23,7 +89,7 @@ bool is_sorted(const vector<string> &vec) {
     return true;
 }
 
-// Merge Sort implementation for vec1
+// Merge Sort implementation
 void merge(vector<string> &vec1, int left, int mid, int right) {
     int n1 = mid - left + 1;
     int n2 = right - mid;
@@ -62,15 +128,13 @@ void merge(vector<string> &vec1, int left, int mid, int right) {
 void mergeSort(vector<string> &vec1, int left, int right) {
     if (left < right) {
         int mid = left + (right - left) / 2;
-
         mergeSort(vec1, left, mid);
         mergeSort(vec1, mid + 1, right);
-
         merge(vec1, left, mid, right);
     }
 }
 
-// Heap Sort implementation for vec1
+// Heap Sort implementation
 void heapify(vector<string> &vec1, int n, int i) {
     int largest = i;
     int left = 2 * i + 1;
@@ -103,7 +167,6 @@ long long measureMergeSort(vector<string> vec1) {
     mergeSort(vec1, 0, vec1.size() - 1);
     auto end = high_resolution_clock::now();
 
-    // Check if sorted correctly
     if (!is_sorted(vec1)) {
         cerr << "Merge Sort did not sort the vector correctly." << endl;
     }
@@ -117,7 +180,6 @@ long long measureHeapSort(vector<string> vec1) {
     heapSort(vec1);
     auto end = high_resolution_clock::now();
 
-    // Check if sorted correctly
     if (!is_sorted(vec1)) {
         cerr << "Heap Sort did not sort the vector correctly." << endl;
     }
@@ -136,22 +198,4 @@ void displayPercentageDifference(long long time1, long long time2) {
     } else {
         cout << "Both sorting algorithms took the same amount of time.\n";
     }
-}
-
-// Main function for testing
-int main() {
-    auto [vec1, vec2] = createRecipeObjects();
-
-    // Measure and print times for Merge Sort
-    long long mergeSortTime = measureMergeSort(vec1);
-    cout << "Merge Sort Time: " << mergeSortTime << " ms\n";
-
-    // Measure and print times for Heap Sort
-    long long heapSortTime = measureHeapSort(vec1);
-    cout << "Heap Sort Time: " << heapSortTime << " ms\n";
-
-    // Display percentage difference
-    displayPercentageDifference(mergeSortTime, heapSortTime);
-
-    return 0;
 }

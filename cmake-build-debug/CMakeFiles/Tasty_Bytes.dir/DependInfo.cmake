@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/marco/OneDrive/CLionProjects/Tasty-Bytes/main.cpp" "CMakeFiles/Tasty_Bytes.dir/main.cpp.obj" "gcc" "CMakeFiles/Tasty_Bytes.dir/main.cpp.obj.d"
-  "C:/Users/marco/OneDrive/CLionProjects/Tasty-Bytes/recipe.cpp" "CMakeFiles/Tasty_Bytes.dir/recipe.cpp.obj" "gcc" "CMakeFiles/Tasty_Bytes.dir/recipe.cpp.obj.d"
+  "/Users/nick/Documents/GitHub/Tasty-Bytes/main.cpp" "CMakeFiles/Tasty_Bytes.dir/main.cpp.o" "gcc" "CMakeFiles/Tasty_Bytes.dir/main.cpp.o.d"
+  "/Users/nick/Documents/GitHub/Tasty-Bytes/recipe.cpp" "CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o" "gcc" "CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
