@@ -1,3 +1,3 @@
-/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles/Tasty_Bytes.dir
-/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/marco/OneDrive/CLionProjects/Tasty-Bytes/cmake-build-debug/CMakeFiles/Tasty_Bytes.dir
+C:/Users/marco/OneDrive/CLionProjects/Tasty-Bytes/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/marco/OneDrive/CLionProjects/Tasty-Bytes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

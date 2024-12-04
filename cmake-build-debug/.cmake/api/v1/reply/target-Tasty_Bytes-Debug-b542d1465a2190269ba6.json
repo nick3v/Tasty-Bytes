@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Tasty_Bytes"
+			"path" : "Tasty_Bytes.exe"
+		},
+		{
+			"path" : "Tasty_Bytes.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -42,14 +45,14 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++14 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics"
+					"fragment" : "-g -std=gnu++14 -fdiagnostics-color=always"
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/nick/Documents/GitHub/Tasty-Bytes/."
+					"path" : "C:/Users/marco/OneDrive/CLionProjects/Tasty-Bytes/."
 				}
 			],
 			"language" : "CXX",
@@ -63,7 +66,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				2
 			]
 		}
 	],
@@ -79,12 +83,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "Tasty_Bytes",
-	"nameOnDisk" : "Tasty_Bytes",
+	"nameOnDisk" : "Tasty_Bytes.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -96,7 +104,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				2
 			]
 		},
 		{
@@ -119,6 +128,12 @@
 			"backtrace" : 1,
 			"path" : "recipe.h",
 			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "recipe.cpp",
+			"sourceGroupIndex" : 0
 		}
 	],
 	"type" : "EXECUTABLE"

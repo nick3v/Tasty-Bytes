@@ -8,6 +8,6 @@
 using namespace std;
 
 int main() {
-        createRecipeObjects();
-        return 1;
+    createRecipeObjects();
+    return 1;
 }

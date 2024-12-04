@@ -52,7 +52,6 @@ pair<vector<string>, vector<Recipe>> createRecipeObjects() {
     ifstream file("../pipedrecipes.psv");
     if (!file.is_open()) {
         cerr << "Error: Unable to open file.\n";
-        return 1;
     }
 
     vector<Recipe> recipeObjectList;
@@ -79,15 +78,17 @@ pair<vector<string>, vector<Recipe>> createRecipeObjects() {
     }
 
 
-    int id;
-    while(true) {
+    //int id;
+    /*while(true) {
         cout << "Enter a recipe ID (-1 to quit): ";
         cin >> id;
         if(id == -1) break;
         recipeObjectList[id].display();
         cout<<recipeNamesId[id]<<endl;
-    }
-
+    }*/
+    cout << "Recipes Successfully Imported." << endl;
+    cout << "Sorting now." << endl;
     return {recipeNamesId, recipeObjectList};
     // do this: auto [vec1, vec2] = createRecipeObjects();
 }
+

@@ -7,4 +7,5 @@ include_directories(.)
 add_executable(Tasty_Bytes
         main.cpp
         recipe.h
+        recipe.cpp
 )
