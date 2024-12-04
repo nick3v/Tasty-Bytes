@@ -3,10 +3,11 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <utility>
 using namespace std;
 // Define the Recipe struct
 struct Recipe {
-    string RecipeId;
+    int RecipeId;
     string Name;
     string TotalTime;
     string RecipeCategory;
@@ -17,6 +18,20 @@ struct Recipe {
     string RecipeServings;
     string RecipeInstructions;
 
+
+    // Constructor
+    Recipe(int RecipeId, string Name, string TotalTime, string RecipeCategory, string RecipeIngredientQuantities, string RecipeIngredientParts, string AggregatedRating, string Calories, string RecipeServings, string RecipeInstructions) {
+        this->RecipeId = RecipeId;
+        this->Name = Name;
+        this->TotalTime = TotalTime;
+        this->RecipeCategory = RecipeCategory;
+        this->RecipeIngredientQuantities = RecipeIngredientQuantities;
+        this->RecipeIngredientParts = RecipeIngredientParts;
+        this->AggregatedRating = AggregatedRating;
+        this->Calories = Calories;
+        this->RecipeServings = RecipeServings;
+        this->RecipeInstructions = RecipeInstructions;
+    }
     // Display the recipe details
     void display() const {
         cout << "RecipeId: " << RecipeId << "\n";
@@ -32,64 +47,47 @@ struct Recipe {
     }
 };
 
-int createRecipeObjects() {
-// Define the headings in order
-    vector<string> headings = {
-            "RecipeId", "Name", "TotalTime", "RecipeCategory", "RecipeIngredientQuantities",
-            "RecipeIngredientParts", "AggregatedRating", "Calories", "RecipeServings", "RecipeInstructions"
-    };
-
-    // Read the entire CSV file as a single string
-    ifstream file("../newrecipes.csv");
+pair<vector<string>, vector<Recipe>> createRecipeObjects() {
+    int skipCounter = 0;
+    ifstream file("../pipedrecipes.psv");
     if (!file.is_open()) {
         cerr << "Error: Unable to open file.\n";
         return 1;
     }
 
-    stringstream buffer;
-    buffer << file.rdbuf(); // Read entire file into buffer
-    string content = buffer.str(); // Get content as a single string
+    vector<Recipe> recipeObjectList;
+    vector<string> recipeNamesId;
+    string line;
 
-    file.close(); // Close the file after reading
+    while (getline(file, line)) {
 
-    // Start processing after the first @
-    size_t startPos = content.find('@') + 1; // Move to the character after the first @
-    if (startPos == 0) { // No @ found in the file
-        cerr << "Error: No delimiter '@' found in the content.\n";
-        return 1;
-    }
+        stringstream ss(line);
+        vector<string> values;
+        string value;
 
-    vector<string> recipeValues(10); // Array to store the 10 values for the first recipe
-    size_t endPos;
-    int count = 0;
-    bool grab = true; // Alternate between grabbing and skipping
-
-    while ((endPos = content.find('@', startPos)) != string::npos) {
-        string value = content.substr(startPos, endPos - startPos);
-
-        if (grab && count < 10) {
-            // Trim whitespace
-            value.erase(0, value.find_first_not_of(" \n\r\t"));
-            value.erase(value.find_last_not_of(" \n\r\t") + 1);
-
-            // Store the value in the array
-            recipeValues[count] = value;
-            count++;
+        while (getline(ss, value, '|')) {
+            values.push_back(value);
         }
 
-        // Toggle between grabbing and skipping
-        grab = !grab;
-
-        // Move to the character after the next @
-        startPos = endPos + 1;
-
-        // Stop if we have filled all 10 headings
-        if (count >= 10) break;
+        if (values.size() == 10) {
+            Recipe recipe(recipeObjectList.size(), values[1], values[2], values[3],
+                          values[4], values[5], values[6], values[7],
+                          values[8], values[9]);
+            recipeNamesId.push_back(values[1]+ to_string(recipeObjectList.size()));
+            recipeObjectList.push_back(recipe);
+        }
     }
 
-    // Print the headings and their corresponding values
-    for (int i = 0; i < 10; i++) {
-        cout << headings[i] << ": " << recipeValues[i] << endl;
+
+    int id;
+    while(true) {
+        cout << "Enter a recipe ID (-1 to quit): ";
+        cin >> id;
+        if(id == -1) break;
+        recipeObjectList[id].display();
+        cout<<recipeNamesId[id]<<endl;
     }
 
+    return {recipeNamesId, recipeObjectList};
+    // do this: auto [vec1, vec2] = createRecipeObjects();
 }
