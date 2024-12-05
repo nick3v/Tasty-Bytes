@@ -53,10 +53,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/nick/Documents/GitHub/Tasty-Bytes
+CMAKE_SOURCE_DIR = /Users/philipjoseph/Documents/GitHub/Tasty-Bytes
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Tasty_Bytes.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/Tasty_Bytes.dir/progress.make
 include CMakeFiles/Tasty_Bytes.dir/flags.make
 
 CMakeFiles/Tasty_Bytes.dir/main.cpp.o: CMakeFiles/Tasty_Bytes.dir/flags.make
-CMakeFiles/Tasty_Bytes.dir/main.cpp.o: /Users/nick/Documents/GitHub/Tasty-Bytes/main.cpp
+CMakeFiles/Tasty_Bytes.dir/main.cpp.o: /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/main.cpp
 CMakeFiles/Tasty_Bytes.dir/main.cpp.o: CMakeFiles/Tasty_Bytes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tasty_Bytes.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tasty_Bytes.dir/main.cpp.o -MF CMakeFiles/Tasty_Bytes.dir/main.cpp.o.d -o CMakeFiles/Tasty_Bytes.dir/main.cpp.o -c /Users/nick/Documents/GitHub/Tasty-Bytes/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Tasty_Bytes.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tasty_Bytes.dir/main.cpp.o -MF CMakeFiles/Tasty_Bytes.dir/main.cpp.o.d -o CMakeFiles/Tasty_Bytes.dir/main.cpp.o -c /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/main.cpp
 
 CMakeFiles/Tasty_Bytes.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tasty_Bytes.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nick/Documents/GitHub/Tasty-Bytes/main.cpp > CMakeFiles/Tasty_Bytes.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/main.cpp > CMakeFiles/Tasty_Bytes.dir/main.cpp.i
 
 CMakeFiles/Tasty_Bytes.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tasty_Bytes.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nick/Documents/GitHub/Tasty-Bytes/main.cpp -o CMakeFiles/Tasty_Bytes.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/main.cpp -o CMakeFiles/Tasty_Bytes.dir/main.cpp.s
 
 CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o: CMakeFiles/Tasty_Bytes.dir/flags.make
-CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o: /Users/nick/Documents/GitHub/Tasty-Bytes/recipe.cpp
+CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o: /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/recipe.cpp
 CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o: CMakeFiles/Tasty_Bytes.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o -MF CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o.d -o CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o -c /Users/nick/Documents/GitHub/Tasty-Bytes/recipe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o -MF CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o.d -o CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o -c /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/recipe.cpp
 
 CMakeFiles/Tasty_Bytes.dir/recipe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tasty_Bytes.dir/recipe.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nick/Documents/GitHub/Tasty-Bytes/recipe.cpp > CMakeFiles/Tasty_Bytes.dir/recipe.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/recipe.cpp > CMakeFiles/Tasty_Bytes.dir/recipe.cpp.i
 
 CMakeFiles/Tasty_Bytes.dir/recipe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tasty_Bytes.dir/recipe.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nick/Documents/GitHub/Tasty-Bytes/recipe.cpp -o CMakeFiles/Tasty_Bytes.dir/recipe.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/recipe.cpp -o CMakeFiles/Tasty_Bytes.dir/recipe.cpp.s
 
 # Object files for target Tasty_Bytes
 Tasty_Bytes_OBJECTS = \
@@ -109,7 +109,7 @@ Tasty_Bytes: CMakeFiles/Tasty_Bytes.dir/main.cpp.o
 Tasty_Bytes: CMakeFiles/Tasty_Bytes.dir/recipe.cpp.o
 Tasty_Bytes: CMakeFiles/Tasty_Bytes.dir/build.make
 Tasty_Bytes: CMakeFiles/Tasty_Bytes.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Tasty_Bytes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Tasty_Bytes"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Tasty_Bytes.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -121,6 +121,6 @@ CMakeFiles/Tasty_Bytes.dir/clean:
 .PHONY : CMakeFiles/Tasty_Bytes.dir/clean
 
 CMakeFiles/Tasty_Bytes.dir/depend:
-	cd /Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/nick/Documents/GitHub/Tasty-Bytes /Users/nick/Documents/GitHub/Tasty-Bytes /Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug /Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug /Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles/Tasty_Bytes.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/philipjoseph/Documents/GitHub/Tasty-Bytes /Users/philipjoseph/Documents/GitHub/Tasty-Bytes /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug /Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/CMakeFiles/Tasty_Bytes.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Tasty_Bytes.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/nick/Documents/GitHub/Tasty-Bytes
+# Install script for directory: /Users/philipjoseph/Documents/GitHub/Tasty-Bytes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

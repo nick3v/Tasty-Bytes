@@ -37,5 +37,7 @@ pair<vector<string>, vector<Recipe>> createRecipeObjects();
 long long measureMergeSort(vector<string> vec1);
 long long measureHeapSort(vector<string> vec1);
 void displayPercentageDifference(long long time1, long long time2);
+void promptUser(vector<string> stringVec, vector<Recipe> recipeVec);
+vector<string> getSortedVector(const vector<string>& vec1);
 
 #endif // RECIPE_H

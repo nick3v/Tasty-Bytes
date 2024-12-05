@@ -8,88 +8,88 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
+				<Option working_dir="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Tasty_Bytes">
-				<Option output="/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Tasty_Bytes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
+				<Option output="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Tasty_Bytes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nick/Documents/GitHub/Tasty-Bytes/."/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Tasty_Bytes"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Tasty_Bytes"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Tasty_Bytes/fast">
-				<Option output="/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Tasty_Bytes" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
+				<Option output="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Tasty_Bytes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/nick/Documents/GitHub/Tasty-Bytes/."/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/."/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Tasty_Bytes/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 Tasty_Bytes/fast"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
+				<Option working_dir="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
+				<Option working_dir="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/nick/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/nick/Documents/GitHub/Tasty-Bytes/main.cpp">
+		<Unit filename="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/main.cpp">
 			<Option target="Tasty_Bytes"/>
 		</Unit>
-		<Unit filename="/Users/nick/Documents/GitHub/Tasty-Bytes/recipe.cpp">
+		<Unit filename="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/recipe.cpp">
 			<Option target="Tasty_Bytes"/>
 		</Unit>
-		<Unit filename="/Users/nick/Documents/GitHub/Tasty-Bytes/recipe.h">
+		<Unit filename="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/recipe.h">
 			<Option target="Tasty_Bytes"/>
 		</Unit>
-		<Unit filename="/Users/nick/Documents/GitHub/Tasty-Bytes/CMakeLists.txt">
+		<Unit filename="/Users/philipjoseph/Documents/GitHub/Tasty-Bytes/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
